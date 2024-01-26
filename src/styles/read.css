@@ -1,0 +1,111 @@
+#read {
+	width: max(400px, 76%);
+	margin-bottom: 200px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.post-text {
+	padding: 12px 12px 48px 12px;
+	border-radius: 4px;
+	white-space: pre-wrap;
+	background-color: var(--secondary-color);
+}
+
+#comment-form {
+	padding: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	border-radius: 4px;
+	background-color: var(--secondary-color);
+}
+
+#comment-form button {
+	padding: 2px;
+	align-self: flex-start;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+label {
+	font-weight: 500;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+textarea, input {
+	padding: 2px;
+}
+
+.form-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 12px;
+	border-radius: 4px;
+	background-color: var(--primary-color);
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+#comment-section-info {
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 4px;
+	background-color: var(--secondary-color);
+}
+
+#comment-section-info > * {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+#comment-section-info button {
+	padding: 2px;
+}
+
+#comment-section {
+	padding: 6px;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	border-radius: 4px;
+	background-color: var(--secondary-color);
+}
+
+.comment {
+	padding: 6px;
+	border-radius: 4px;
+	font-size: 0.8em;
+	background-color: var(--primary-color);
+}
+
+.comment-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.comment-header hr {
+	margin: 0 6px;
+	flex: 1;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+.comment-name {
+	font-weight: 700;
+}

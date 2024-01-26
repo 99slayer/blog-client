@@ -1,0 +1,47 @@
+#list {
+	flex: 1;
+}
+
+#post-list-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 400px));
+	grid-template-rows: 200px;
+	justify-self: stretch;
+	gap: 10px;
+}
+
+.list-card a {
+	height: 200px;
+	padding: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	border-radius: 4px;
+	background-color: var(--secondary-color);
+	font-size: 0.7em;
+	cursor: pointer;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.list-card a > * {
+	padding: 6px;
+	border-radius: 4px;
+	background-color: var(--primary-color);
+}
+
+.card-header-top {
+	display: grid;
+	grid-template-columns: 1fr 120px;
+}
+
+.card-header-title {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.list-card-text {
+	flex: 1;
+	overflow: hidden;
+}

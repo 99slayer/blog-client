@@ -4,7 +4,16 @@
 	box-sizing: border-box;
 }
 
+body {
+	--primary-color: rgb(80, 80, 80);
+	--secondary-color: rgb(136, 136, 136);
+
+	min-height: 100vh;
+	padding: 10px;
+}
+
 :root {
+	height: 100%;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -19,6 +28,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-	padding: 10px;
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none !important;
 }
