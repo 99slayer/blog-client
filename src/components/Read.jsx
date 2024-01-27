@@ -95,6 +95,8 @@ const CommentForm = (props) => {
 						className='form-control'
 						name='comment-name'
 						placeholder='name'
+						required
+						maxLength={60}
 					></input>
 				</div>
 				<div className='form-group'>
@@ -103,6 +105,7 @@ const CommentForm = (props) => {
 						className='form-control'
 						name='comment-text'
 						placeholder='comment'
+						required
 					></textarea>
 				</div>
 			</div>
@@ -119,9 +122,9 @@ const Comment = (props) => {
 			<div className='comment-header'>
 				<p className='comment-name'>{data.name}</p>
 				<hr/>
-				<p>{data['timestamp_formatted']}</p>
+				<p className='comment-date'>{data['timestamp_formatted']}</p>
 			</div>
-			<p>{data.text}</p>
+			<p className='comment-text'>{data.text}</p>
 		</li>
 	);
 };
