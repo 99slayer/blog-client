@@ -6,7 +6,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 400px));
 	grid-template-rows: 200px;
-	justify-self: stretch;
+	justify-content: center;
 	gap: 10px;
 }
 
